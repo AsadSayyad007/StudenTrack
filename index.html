@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Student</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body bgcolor="pink">
+
+<div class="container">
+	<div class="row">
+		<div class="offset-lg-3 col-lg-6">	
+		<h1 align="center" style="color:#313">Add Student</h1>  
+		<form action="addStudent.jsp" method="post">
+		 
+		<div class="form-group">
+			<label>Name:</label>
+			<input type="text" name="name" class="form-control"/>
+		</div>
+		
+		
+		<div class="form-group">
+				<label>Email:</label>
+		        <input type="email" name="email" class="form-control"/>
+		</div>
+		<div class="form-group">
+				<div class="form-check">
+				
+					<label class="form-check-label">
+						<input type="radio" name="gender" value="male" class="form-check-input"/>Male   
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" name="gender" value="female" class="form-check-input"/>Female  
+					</label>
+				</div>
+		</div>
+				
+		<div class="form-group">
+			<label>Country:</label>
+			<select name="country" class="form-control">  
+					<option>India</option>  
+					<option>USA</option>  
+					<option>Canada</option>  
+			</select>  
+		</div>		
+		<input type="submit" class="btn btn-danger" value="Add User"/>
+ 
+</form>  
+ <div align="center">
+	 <a   href="viewusers.jsp">View All Records</a><br/> 
+  <a href="studentForm.html">Add a new Record</a>
+ </div>
+ 		</div>
+ 	</div>
+ </div>
+ </body>
+</html>
